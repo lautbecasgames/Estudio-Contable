@@ -1,0 +1,30 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- SEO -->
+    <meta name="description" content="Asesoría impositiva profesional para monotributistas, responsables inscriptos y empresas. Gestión tributaria digital, clara y especializada.">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="/favicon.png">
+
+    <!-- TÍTULO DEFAULT (se sobrescribe desde cada página) -->
+    <title><slot name="title" /> | Tributos Plus</title>
+
+    <!-- ICONOS Y TIPOGRAFÍAS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- SCRIPTS GLOBALES -->
+    <script src="/global.js" defer></script>
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>

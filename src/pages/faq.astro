@@ -1,0 +1,181 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout>
+
+  <!-- TÍTULO DE ESTA PÁGINA -->
+  <Fragment slot="title">Preguntas frecuentes</Fragment>
+
+  <Header />
+
+  <main>
+
+   <div class="container">
+
+<div class="container">
+<h1>Preguntas Frecuentes</h1>
+
+<div id="accordion">
+
+<!-- ================= TUS 10 PREGUNTAS COMPLETAS ================= -->
+
+<div class="accordion-item">
+    <div class="accordion-header">
+        ¿Qué es el Monotributo?
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+        El Monotributo es un régimen simplificado que unifica tus obligaciones impositivas y previsionales en un único pago mensual, diseñado para pequeños contribuyentes y trabajadores independientes.
+    </div>
+</div>
+
+<div class="accordion-item">
+    <div class="accordion-header">
+        ¿Qué significa ser Responsable Inscripto?
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+        Ser Responsable Inscripto implica tributar IVA, realizar presentaciones mensuales, declaraciones juradas anuales y cumplir obligaciones fiscales más completas que el Monotributo.
+    </div>
+</div>
+
+<div class="accordion-item">
+    <div class="accordion-header">
+        ¿Cada cuánto debo recategorizarme en el Monotributo?
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+        La recategorización se realiza dos veces al año, en enero y julio. Debes revisar tu facturación y parámetros para confirmar si permaneces en la misma categoría o corresponde un cambio.
+    </div>
+</div>
+
+<div class="accordion-item">
+    <div class="accordion-header">
+        ¿Qué pasa si no hago la recategorización a tiempo?
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+        Si no realizas la recategorización cuando corresponde, AFIP puede hacerlo de manera automática y asignarte una categoría superior, aplicando diferencias e intereses.
+    </div>
+</div>
+
+<div class="accordion-item">
+    <div class="accordion-header">
+        ¿Puedo facturar sin estar inscripto en AFIP?
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+        No. Para emitir facturas legales debes estar inscripto como Monotributista o Responsable Inscripto y tener los puntos de venta habilitados en AFIP.
+    </div>
+</div>
+
+<div class="accordion-item">
+    <div class="accordion-header">
+        ¿Qué ocurre si supero los topes del Monotributo?
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+        Si superas los límites establecidos, AFIP puede excluirte del Monotributo y deberás pasar al régimen general como Responsable Inscripto.
+    </div>
+</div>
+
+<div class="accordion-item">
+    <div class="accordion-header">
+        ¿Qué impuestos paga un Responsable Inscripto?
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+        Un Responsable Inscripto debe presentar y pagar IVA, Ganancias, Ingresos Brutos y cumplir con regímenes de información.
+    </div>
+</div>
+
+<div class="accordion-item">
+    <div class="accordion-header">
+        ¿Qué es Ingresos Brutos y cuándo debo inscribirme?
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+        Ingresos Brutos es un impuesto provincial que grava la actividad comercial. Debes inscribirte si realizas actividades económicas en una o más provincias del país.
+    </div>
+</div>
+
+<div class="accordion-item">
+    <div class="accordion-header">
+        ¿Qué es el Convenio Multilateral?
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+        Es un régimen que aplica cuando desarrollas actividad económica en dos o más provincias y permite distribuir el impuesto entre las jurisdicciones correspondientes.
+    </div>
+</div>
+
+<div class="accordion-item">
+    <div class="accordion-header">
+        ¿Puedo deducir gastos siendo Monotributista?
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+        No. El Monotributo no permite deducir gastos. Las deducciones aplican solo para el régimen general.
+    </div>
+</div>
+
+</div>
+</div>
+
+    
+  </main>
+
+  <Footer />
+
+</BaseLayout>
+<style>
+h1{
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size:2.6rem;
+  color:var(--burgundy);
+  margin-bottom:60px;
+}
+
+.accordion-item{
+  background:var(--bg-cream);
+  margin-bottom:20px;
+  border-radius:20px;
+  border:1px solid rgba(0,0,0,0.05);
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  overflow:hidden;
+}
+
+.accordion-header{
+  padding:20px 25px;
+  cursor:pointer;
+  font-size:1.1rem;
+  font-weight:500;
+  color:var(--burgundy);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.accordion-header i{
+  font-size:20px;
+  transition:transform .3s;
+}
+
+.accordion-content{
+  max-height:0;
+  overflow:hidden;
+  background:white;
+  color:#444;
+  padding:0 25px;
+  line-height:1.7;
+  transition:max-height .35s ease, padding .35s ease;
+}
+
+.accordion-content.open{
+  padding:25px;
+}
+</style>

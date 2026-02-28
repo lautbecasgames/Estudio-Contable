@@ -1,0 +1,170 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout>
+  
+  <!-- TÍTULO DE ESTA PÁGINA -->
+  <Fragment slot="title">Inicio</Fragment>
+
+  <Header />
+
+  <!-- CONTENIDO DE LA PÁGINA IRÁ AQUÍ -->
+  <main>
+<section class="hero">
+<div class="container">
+
+<div class="hero-box">
+    <h1>Gestión Tributaria Personalizada</h1>
+    <p>Obtén el acompañamiento que necesitas para llevar tu situación fiscal ordenada y sin riesgos. Y para los Estudios Contables ponemos a disposición un sistema de soporte impositivo que ayuda a disminuir la presión laboral interna.</p>
+    <a href="#contacto" class="btn btn-primary">Solicitar asesoría</a>
+</div>
+
+</div>
+</section>
+
+<section id="quienes" class="section-light">
+ <div class="container section-box card-white">
+
+  <h2>Quiénes somos</h2>
+
+  <div class="text-minimal">
+    En Tributos Plus somos profesionales especializados en gestión tributaria y planificación impositiva, con más de 20 años de experiencia en liquidación de impuestos y acompañamiento fiscal estratégico.<br><br>
+
+   Te brindamos soporte con tu Monotributo y a quienes desarrollan actividades económicas independientes, ofreciendo claridad, orden y previsión en la gestión de sus obligaciones fiscales.<br><br>
+
+Durante los últimos años hemos consolidado un modelo de trabajo completamente digital, optimizando procesos y asegurando un servicio ágil, organizado y confiable.<br><br>
+
+    Nuestro enfoque combina análisis técnico, actualización normativa permanente y una comunicación clara y cercana, orientada a brindar estabilidad y tranquilidad en cada etapa del proceso fiscal.<br><br>
+  </div>
+
+</div>	
+</section>
+
+<section id="servicios" class="section-cream">
+  <div class="container section-box card-white">
+
+    <h2>Servicios y Actualidad</h2>
+
+    <div class="services-grid">
+
+  <div class="service-block">
+    <h3>Monotributo y Emprendedores</h3>
+    <div class="service-text">
+      <span class="item"><span class="check">✓</span> Inscripción en Monotributo</span>
+      <span class="item"><span class="check">✓</span> Alta en Ingresos Brutos</span>
+      <span class="item"><span class="check">✓</span> Recategorización periódica</span>
+      <span class="item"><span class="check">✓</span> Facturación electrónica</span>
+      <span class="item"><span class="check">✓</span> Liquidación básica de sueldos</span>
+      <span class="item"><span class="check">✓</span> Asesoramiento permanente</span>
+
+    </div>
+<a href="servicio-monotributo.html" class="service-link">
+      Más detalles
+</a>
+  </div>
+
+  <div class="service-block">
+    <h3>Estudios Contables</h3>
+    <div class="service-text">
+      <span class="item"><span class="check">✓</span> Liquidación de impuestos nacionales y provinciales</span>
+      <span class="item"><span class="check">✓</span> Armado y presentación de declaraciones juradas</span>
+      <span class="item"><span class="check">✓</span> Confección de Balances</span>
+      <span class="item"><span class="check">✓</span> DJ Agentes de Recaudación</span>
+      <span class="item"><span class="check">✓</span> Asistencia profesional continua</span>
+
+    </div>
+<a href="servicio-estudios.html" class="service-link">
+      Más detalles
+</a>	
+  </div>
+
+  </div> 
+  </div> 
+
+</section>
+
+<section id="planes" class="section-planes">
+
+<div style="max-width:1200px; margin:0 auto; padding:0 5%;">
+
+<div style="display:flex; align-items:center; justify-content:space-between; gap:80px; flex-wrap:wrap;" class="planes-desktop">
+
+<div class="planes-column">
+
+<h2 class="planes-title">Planes personalizados</h2>
+
+<div class="planes-text">
+
+  En Tributos Plus entendemos que cada actividad económica tiene particularidades que requieren un enfoque técnico y una guía fiscal adecuada.<br><br>
+
+  Si eres monotributista o desarrollas una actividad independiente, diseñamos una estrategia mensual que se adapta a tus obligaciones, a tu nivel de facturación y al ritmo real de tu actividad.<br><br>
+
+
+  Además, brindamos asistencia continua en trámites, gestiones y actualizaciones impositivas para que puedas mantener tu situación fiscal siempre al día sin complicaciones.<br><br>
+
+  Y si tienes un estudio contable que busca tercerizar tareas, ofrecemos un soporte impositivo externo que permite delegar liquidaciones y gestiones de clientes con precisión, continuidad y sin cargas administrativas propias.<br><br>
+
+
+  En Tributos Plus encontrarás un acompañamiento profesional orientado a la eficiencia, la previsión y la claridad en cada paso.
+
+</div>
+
+</div>
+
+<div class="planes-column">
+    <img src="imagen-planes.jpg" alt="Planes contables y tributarios Tributos Plus" class="planes-image">
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="proceso" class="section-gray">
+  <div class="container section-box">
+
+    <h2>Cómo trabajamos</h2>
+
+<div class="steps">
+  <div class="step-box">
+    <div class="step-number">01</div>
+    <p>Nos contactas a través de los canales disponibles.</p>
+  </div>
+  <div class="step-box">
+    <div class="step-number">02</div>
+    <p>Diseñamos una estrategia que se adecúe a tus necesidades.</p>
+  </div>
+  <div class="step-box">
+    <div class="step-number">03</div>
+    <p>Gestionamos y te acompañamos en el proceso.</p>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<section id="contacto" class="container section-box section-contacto card-dark">
+
+<h2>Contáctanos para Asesorarte</h2>
+
+<form action="https://formspree.io/f/meelzkbp" method="POST">
+<input type="text" name="nombre" placeholder="Nombre completo" required>
+<input type="email" name="email" placeholder="Correo electrónico" required>
+<input type="tel" name="telefono" placeholder="Teléfono">
+<textarea name="mensaje" rows="5" placeholder="Cuéntanos tu situación" required></textarea>
+<button type="submit" class="btn btn-primary">Enviar consulta</button>
+</form>
+
+
+  </main>
+<a href="https://wa.me/5491155271829?text=Hola,%20quisiera%20comunicarme%20con%20Tributos%20Plus%20para%20solicitar%20asesoría.%20Les%20comparto%20mis%20datos:%0ATema:%0ANombre:%0ACorreo:%0A%0A*Gracias.*" 
+   class="whatsapp-fixed" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+  <Footer />
+
+</BaseLayout>
