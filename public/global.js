@@ -36,8 +36,7 @@ const mobileSubmenuServicios = document.querySelector('.mobile-submenu-servicios
 
 if (mobileServicios) {
     mobileServicios.addEventListener('click', (e) => {
-        e.preventDefault();
-
+        
         // alternar el submenú
         mobileSubmenuServicios.classList.toggle('activo');
 
