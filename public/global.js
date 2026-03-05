@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Cerrar menú móvil solo para los demás enlaces
             menu.classList.remove('active');
-            toggle.setAttribute('aria-expanded',"false");
+            toggle.setAttribute('aria-expanded',"false");	
         });
     });
 });
@@ -36,11 +36,10 @@ const mobileSubmenuServicios = document.querySelector('.mobile-submenu-servicios
 
 if (mobileServicios) {
     mobileServicios.addEventListener('click', (e) => {
-        
-        // alternar el submenú
-        mobileSubmenuServicios.classList.toggle('activo');
 
-        // alternar el estado del enlace para la flechita (si luego quieres rotación)
+        e.preventDefault();
+
+        mobileSubmenuServicios.classList.toggle('activo');
         mobileServicios.classList.toggle('activo');
     });
 }
