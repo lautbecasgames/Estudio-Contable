@@ -1,3 +1,7 @@
+---
+const path = Astro.url.pathname;
+---
+
 <header>
 <div class="container header-flex">
 
@@ -15,10 +19,12 @@
 
     </div>
 
-    <a href="https://wa.me/5491155271829?text=Hola,%20quisiera%20comunicarme%20con%20Tributos%20Plus%20para%20solicitar%20asesoría.%20Les%20comparto%20mis%20datos:%0ATema:%0ANombre:%0ACorreo:%0A%0A*Gracias.*" 
-       class="whatsapp-icon header-wpp" target="_blank" aria-label="WhatsApp Tributos Plus">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<a href="https://wa.me/5491155271829?text=Hola,%20quisiera%20comunicarme%20con%20Tributos%20Plus%20para%20solicitar%20asesoría.%20Les%20comparto%20mis%20datos:%0ATema:%0ANombre:%0ACorreo:%0A%0A*Gracias.*" 
+   class={`whatsapp-icon header-wpp ${path === '/' ? 'wpp-hidden' : ''}`}
+   target="_blank"
+   aria-label="WhatsApp Tributos Plus">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
     <nav class="menu">
       <a href="/#quienes">Quiénes somos</a>

@@ -702,3 +702,6 @@ header .container{
     display: flex;
 }
 
+.wpp-hidden{
+  visibility: hidden;
+}
