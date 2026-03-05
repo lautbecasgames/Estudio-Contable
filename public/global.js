@@ -7,17 +7,20 @@ document.addEventListener("DOMContentLoaded", () => {
         toggle.setAttribute('aria-expanded', isOpen);
     });
 
-    menu.querySelectorAll('a').forEach(link=>{
-        link.addEventListener('click',()=>{
+menu.querySelectorAll('a').forEach(link=>{
+    link.addEventListener('click',(e)=>{
 
-            // NO cerrar el menú móvil si se hace clic en "Servicios"
-            if (link.classList.contains('mobile-servicios')) return;
+        // Si es "Servicios", solo abrir submenú y no navegar
+        if (link.classList.contains('mobile-servicios')) {
+            e.preventDefault();
+            return;
+        }
 
-            // Cerrar menú móvil solo para los demás enlaces
-            menu.classList.remove('active');
-            toggle.setAttribute('aria-expanded',"false");	
-        });
+        // Cerrar menú móvil para los demás enlaces
+        menu.classList.remove('active');
+        toggle.setAttribute('aria-expanded',"false");
     });
+});
 });
 
 const menuServicios = document.querySelector('.menu-servicios');

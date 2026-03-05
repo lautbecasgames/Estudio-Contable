@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+
+const { title } = Astro.props;
 ---
 
 <html lang="es">
@@ -13,14 +15,14 @@ import "../styles/global.css";
     <!-- FAVICON -->
     <link rel="icon" href="/favicon.png">
 
-    <!-- TÍTULO DEFAULT (se sobrescribe desde cada página) -->
-    <title><slot name="title" /> | Tributos Plus</title>
+    <!-- TÍTULO -->
+    <title>{title ? `${title} | Tributos Plus` : "Tributos Plus"}</title>
 
-    <!-- ICONOS Y TIPOGRAFÍAS -->
+    <!-- TIPOGRAFÍAS E ICONOS -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- SCRIPTS GLOBALES -->
+    <!-- JS GLOBAL -->
     <script src="/global.js" defer></script>
   </head>
 
