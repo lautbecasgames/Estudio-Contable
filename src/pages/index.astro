@@ -3,7 +3,7 @@ title: "Inicio"
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { Fragment } from 'astro/jsx-runtime';
+import QuienesSomos from '../components/QuienesSomos.astro';
 ---
 
 <BaseLayout title="Inicio">
@@ -27,23 +27,7 @@ import { Fragment } from 'astro/jsx-runtime';
 </div>
 </section>
 
-<section id="quienes" class="section-light">
- <div class="container section-box card-white">
-
-  <h2>Quiénes somos</h2>
-
-  <div class="text-minimal">
-    En Tributos Plus somos profesionales especializados en gestión tributaria y planificación impositiva, con más de 20 años de experiencia en liquidación de impuestos y acompañamiento fiscal estratégico.<br><br>
-
-   Te brindamos soporte con tu Monotributo y a quienes desarrollan actividades económicas independientes, ofreciendo claridad, orden y previsión en la gestión de sus obligaciones fiscales.<br><br>
-
-Durante los últimos años hemos consolidado un modelo de trabajo completamente digital, optimizando procesos y asegurando un servicio ágil, organizado y confiable.<br><br>
-
-    Nuestro enfoque combina análisis técnico, actualización normativa permanente y una comunicación clara y cercana, orientada a brindar estabilidad y tranquilidad en cada etapa del proceso fiscal.<br><br>
-  </div>
-
-</div>	
-</section>
+<QuienesSomos />
 
 <section id="servicios" class="section-cream">
   <div class="container section-box card-white">
@@ -150,7 +134,7 @@ Durante los últimos años hemos consolidado un modelo de trabajo completamente 
 
 <section id="contacto" class="container section-box section-contacto card-dark">
 
-<h2>Contáctanos para Asesorarte</h2>
+<h2>Contáctanos</h2>
 
 <form action="https://formspree.io/f/meelzkbp" method="POST">
 <input type="text" name="nombre" placeholder="Nombre completo" required>

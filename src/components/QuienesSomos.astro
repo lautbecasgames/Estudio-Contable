@@ -1,0 +1,217 @@
+<section id="quienes" class="quienes-section">
+
+<div class="container">
+
+<div class="quienes-grid">
+
+<div class="quienes-foto">
+<img src="/fotoperfil.jpg" alt="Perfil profesional Tributos Plus">
+
+<div class="perfil-info">
+<span class="perfil-nombre">Daniel Carreño M.</span>
+<span class="perfil-cargo">Especialista Impositivo y Contable</span>
+</div>
+
+</div>
+
+<div class="quienes-content">
+
+<h2 class="quienes-title">Quiénes somos</h2>
+
+<p class="quienes-intro">
+En Tributos Plus brindamos servicios de gestión tributaria y planificación impositiva con más de 20 años de experiencia en liquidación de impuestos y asesoramiento fiscal.
+</p>
+
+<p class="quienes-intro">
+Acompañamos a monotributistas, emprendedores y profesionales independientes ayudándolos a mantener su situación fiscal ordenada, clara y bajo control.
+</p>
+
+<div class="quienes-bloques">
+
+<div class="bloque">
+<h3>Experiencia</h3>
+<p>
+Más de dos décadas trabajando en liquidación de impuestos, asesoramiento fiscal y acompañamiento técnico para distintas actividades económicas.
+</p>
+</div>
+
+<div class="bloque">
+<h3>Ubicación</h3>
+<p>
+Ubicados en Palermo, CABA, con un modelo de atención 100% digital.
+</p>
+</div>
+
+<div class="bloque">
+<h3>Modelo de trabajo</h3>
+<p>
+Además del asesoramiento directo a monotributistas, colaboramos con estudios contables brindando soporte técnico en la liquidación de impuestos y elaboración de balances de sus propios clientes.
+</p>
+</div>
+
+</div>
+
+<div class="quienes-datos">
+
+<span>20+ años de experiencia</span>
+<span>Palermo, CABA</span>
+<span>Atención 100% remota</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<style>
+
+.quienes-section{
+padding:120px 0;
+background:#ffffff;
+}
+
+.quienes-title{
+text-align:left;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:60px;
+}
+
+.quienes-grid{
+display:grid;
+grid-template-columns:420px 1fr;
+gap:70px;
+align-items:center;
+}
+
+.quienes-foto img{
+width:100%;
+border-radius:18px;
+box-shadow:0 25px 50px rgba(0,0,0,0.15);
+object-fit:cover;
+transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.quienes-foto img:hover{
+transform:scale(1.03);
+box-shadow:0 35px 70px rgba(0,0,0,0.18);
+}
+
+.perfil-info{
+margin-top:28px;
+text-align:left;
+}
+
+.perfil-nombre{
+display:block;
+font-family:'Playfair Display',serif;
+font-size:1.15rem;
+font-weight:600;
+color:var(--burgundy);
+letter-spacing:0.3px;
+margin-bottom:2px;
+
+-webkit-text-stroke:0.3px #000;
+text-shadow:0 1px 2px rgba(0,0,0,0.18);
+}
+
+.perfil-cargo{
+display:block;
+font-family:'Inter',sans-serif;
+font-size:0.85rem;
+color:#666;
+letter-spacing:0.3px;
+}
+
+.quienes-content{
+max-width:600px;
+}
+
+.quienes-intro{
+font-size:1.05rem;
+line-height:1.8;
+color:#444;
+margin-bottom:20px;
+}
+
+.quienes-bloques{
+margin-top:30px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.bloque{
+background:#fafafa;
+padding:16px 18px;
+border-radius:12px;
+border:1px solid rgba(0,0,0,0.05);
+transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.bloque:hover{
+transform:translateY(-3px);
+box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+.bloque h3{
+font-size:1.1rem;
+color:var(--burgundy);
+margin-bottom:6px;
+}
+
+.bloque p{
+font-size:0.95rem;
+line-height:1.6;
+color:#555;
+}
+
+.quienes-datos{
+margin-top:40px;
+padding-top:20px;
+border-top:1px solid rgba(0,0,0,0.08);
+
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+
+font-size:0.9rem;
+color:#444;
+font-weight:500;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.quienes-grid{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.quienes-foto{
+max-width:340px;
+margin:auto;
+}
+
+.perfil-info{
+text-align:left;
+}
+
+.quienes-content{
+text-align:left;
+}
+
+.quienes-datos{
+flex-direction:column;
+gap:8px;
+}
+
+}
+
+</style>
+
+</section>
