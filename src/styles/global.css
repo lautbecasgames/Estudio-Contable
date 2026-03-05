@@ -16,9 +16,13 @@ body{
     font-family:'Inter',sans-serif;
     color:#2f2f2f;
     background:var(--bg-cream);
+    padding-top:160px;
 }
 
-section{padding:120px 0;}
+section{
+    padding-top:120px;
+    padding-bottom:120px;
+}
 
 /* CONTENEDOR */
 .container{width:90%;max-width:1200px;margin:auto;}
