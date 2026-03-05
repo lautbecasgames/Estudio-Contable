@@ -122,7 +122,7 @@ En Tributos Plus ofrecemos un servicio técnico que se integra al funcionamiento
 <div class="numero">04</div>
 <h3>El resultado para tu estudio</h3>
 <p>
-Tu estudio mantiene el control de sus clientes mientras reduce la carga operativa y laboral interna. Reuciendo sus costos en nómina de personal y cargas previsionales.
+Tu estudio mantiene el control de sus clientes mientras reduce la carga operativa y laboral interna. Reduciendo sus costos en nómina de personal y cargas previsionales.
 </p>
 </div>
 
@@ -232,9 +232,28 @@ line-height:1.6;
 }
 
 .proceso-card ul{
-padding-left:18px;
-color:#555;
+list-style:none;
+padding-left:0;
+margin-top:10px;
+}
+
+.proceso-card ul li{
+position:relative;
+padding-left:22px;
+margin-bottom:6px;
+color:#444;
+font-family:'Inter',sans-serif;
+font-size:0.95rem;
 line-height:1.6;
+}
+
+.proceso-card ul li::before{
+content:"✓";
+position:absolute;
+left:0;
+top:0;
+color:#62A622;
+font-weight:700;
 }
 
 @media (max-width:768px){
